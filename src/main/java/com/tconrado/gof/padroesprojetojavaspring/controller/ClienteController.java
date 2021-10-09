@@ -3,13 +3,13 @@ package com.tconrado.gof.padroesprojetojavaspring.controller;
 import com.tconrado.gof.padroesprojetojavaspring.exception.ClienteNotFoundException;
 import com.tconrado.gof.padroesprojetojavaspring.model.Cliente;
 import com.tconrado.gof.padroesprojetojavaspring.service.ClienteService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
+@Tag(name = "Cliente", description = "Operações com Clientes")
 @RestController
 @RequestMapping("clientes")
 public class ClienteController {
